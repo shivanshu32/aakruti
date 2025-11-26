@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    color: #2C2C2C;
+    background-color: #FAF8F5;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+  }
+
+  input, textarea, select, button {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  /* Elegant font class */
+  .font-elegant {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+
+  /* Display font class */
+  .font-display {
+    font-family: 'Cinzel', 'Playfair Display', serif;
+  }
+}
+
+/* Custom Animations */
+@keyframes scroll-down {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+.animate-scroll-down {
+  animation: scroll-down 1.5s ease-in-out infinite;
+}
+
