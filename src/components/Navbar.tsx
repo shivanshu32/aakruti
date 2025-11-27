@@ -60,11 +60,11 @@ const Navbar = () => {
           {/* CTA Button - Fixed width for balance */}
           <div className="hidden lg:flex items-center justify-end lg:w-48">
             <a
-              href="tel:9568600700"
+              href="tel:919105079000"
               className="font-sans flex items-center space-x-2 bg-[#C9A962] text-white px-5 py-2.5 rounded-full font-medium text-sm tracking-wide hover:bg-[#A68B4B] transition-colors duration-200"
             >
               <Phone size={18} />
-              <span>9568-600-700</span>
+              <span>+91 9105079000</span>
             </a>
           </div>
 
@@ -94,11 +94,11 @@ const Navbar = () => {
                 </a>
               ))}
               <a
-                href="tel:9568600700"
+                href="tel:919105079000"
                 className="font-sans flex items-center justify-center space-x-2 bg-[#C9A962] text-white px-5 py-3 rounded-full font-medium tracking-wide mt-4"
               >
                 <Phone size={18} />
-                <span>9568-600-700</span>
+                <span>+91 9105079000</span>
               </a>
             </div>
           </div>

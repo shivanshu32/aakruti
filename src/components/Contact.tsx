@@ -32,14 +32,14 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Phone',
-      details: ['9568-600-700', '9105-600-700'],
-      action: 'tel:9568600700',
+      details: ['+91 9105079000'],
+      action: 'tel:919105079000',
     },
     {
       icon: Mail,
       title: 'Email',
-      details: ['info@earthousing.com'],
-      action: 'mailto:info@earthousing.com',
+      details: ['aakrutidevelopers1@hotmail.com'],
+      action: 'mailto:aakrutidevelopers1@hotmail.com',
     },
     {
       icon: MapPin,
@@ -208,11 +208,11 @@ const Contact = () => {
                 Book a free site visit today!
               </p>
               <a
-                href="tel:9568600700"
+                href="tel:919105079000"
                 className="font-sans inline-flex items-center space-x-2 bg-[#C9A962] text-white px-6 py-3 rounded-xl font-semibold tracking-wide hover:bg-[#A68B4B] transition-colors"
               >
                 <Phone className="w-5 h-5" />
-                <span>Call Now: 9568-600-700</span>
+                <span>Call Now: +91 9105079000</span>
               </a>
             </div>
 

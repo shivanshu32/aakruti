@@ -53,7 +53,7 @@ const Location = () => {
           <div className="relative">
             <div className="rounded-3xl overflow-hidden shadow-2xl h-[500px]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56636.07842!2d77.6!3d27.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39736ce47bffc039%3A0xfe5fc5e0e0b9d5!2sMathura%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1699000000000!5m2!1sen!2sin"
+                src="https://maps.google.com/maps?q=27.485525,77.620972&z=16&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
