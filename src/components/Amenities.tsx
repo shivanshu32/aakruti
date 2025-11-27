@@ -43,7 +43,6 @@ const Amenities = () => {
     { icon: Shield, name: 'Gated Community' },
     { icon: Car, name: '40ft Wide Roads' },
     { icon: Droplets, name: '24/7 Water Supply' },
-    { icon: Shield, name: 'Round-the-clock Security' },
     { icon: TreePine, name: 'Near Famous Temples' },
     { icon: Lightbulb, name: 'Uninterrupted Power' },
     { icon: Lightbulb, name: 'LED Street Lights' },
@@ -149,9 +148,9 @@ const Amenities = () => {
           </div>
         </div>
 
-        {/* Essential Amenities - Clean Grid */}
+        {/* Essential Amenities - 3 Column Layout with iPhone Center */}
         <div className="mb-20">
-          <div className="flex items-center justify-center gap-3 mb-8">
+          <div className="flex items-center justify-center gap-3 mb-12">
             <div className="w-8 h-[1px] bg-[#1A5F5E]" />
             <h3 className="font-sans text-sm font-semibold text-[#1A5F5E] tracking-[0.2em] uppercase">
               Essential Amenities
@@ -159,18 +158,78 @@ const Amenities = () => {
             <div className="w-8 h-[1px] bg-[#1A5F5E]" />
           </div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
-            {essentialAmenities.map((amenity, index) => (
-              <div
-                key={index}
-                className="group flex items-center gap-4 bg-white border border-gray-200 rounded-xl px-5 py-4 hover:border-[#C9A962] hover:shadow-md transition-all duration-300"
-              >
-                <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-[#C9A962]/10 flex items-center justify-center">
-                  <amenity.icon className="w-5 h-5 text-[#C9A962]" />
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-6 items-center max-w-7xl mx-auto">
+            {/* Left Column - First half of amenities */}
+            <div className="flex flex-col gap-4 order-2 lg:order-1">
+              {essentialAmenities.slice(0, Math.ceil(essentialAmenities.length / 2)).map((amenity, index) => (
+                <div
+                  key={index}
+                  className="group flex items-center gap-4 bg-white border border-gray-200 rounded-2xl px-6 py-5 hover:border-[#C9A962] hover:shadow-lg hover:-translate-x-1 transition-all duration-300"
+                >
+                  <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-[#C9A962]/20 to-[#1A5F5E]/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <amenity.icon className="w-6 h-6 text-[#C9A962]" />
+                  </div>
+                  <span className="font-sans text-sm text-gray-700 font-medium">{amenity.name}</span>
+                  <div className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="w-2 h-2 rounded-full bg-[#C9A962]" />
+                  </div>
                 </div>
-                <span className="font-sans text-sm text-gray-700 font-medium">{amenity.name}</span>
+              ))}
+            </div>
+
+            {/* Center Column - iPhone Mockup */}
+            <div className="flex justify-center order-1 lg:order-2">
+              <div className="relative">
+                {/* Glow effect behind phone */}
+                <div className="absolute inset-0 bg-gradient-to-b from-[#C9A962]/20 via-[#1A5F5E]/10 to-transparent blur-3xl scale-150" />
+                
+                <div className="relative mx-auto w-[260px] h-[540px]">
+                  {/* iPhone Frame */}
+                  <div className="absolute inset-0 bg-gradient-to-b from-gray-800 to-gray-900 rounded-[3rem] shadow-2xl border-[12px] border-gray-800">
+                    {/* Dynamic Island */}
+                    <div className="absolute top-3 left-1/2 -translate-x-1/2 w-24 h-7 bg-black rounded-full z-10" />
+                    {/* Screen */}
+                    <div className="w-full h-full rounded-[2.4rem] overflow-hidden bg-black">
+                      <video
+                        src="/video1.mp4"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    {/* Home indicator */}
+                    <div className="absolute bottom-2 left-1/2 -translate-x-1/2 w-28 h-1 bg-white/60 rounded-full" />
+                    {/* Side buttons */}
+                    <div className="absolute -right-[14px] top-28 w-[3px] h-12 bg-gray-700 rounded-r-sm" />
+                    <div className="absolute -left-[14px] top-24 w-[3px] h-8 bg-gray-700 rounded-l-sm" />
+                    <div className="absolute -left-[14px] top-36 w-[3px] h-16 bg-gray-700 rounded-l-sm" />
+                  </div>
+                </div>
+                
+                {/* Decorative elements */}
+                <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-32 h-8 bg-gray-900/20 blur-xl rounded-full" />
               </div>
-            ))}
+            </div>
+
+            {/* Right Column - Second half of amenities */}
+            <div className="flex flex-col gap-4 order-3">
+              {essentialAmenities.slice(Math.ceil(essentialAmenities.length / 2)).map((amenity, index) => (
+                <div
+                  key={index}
+                  className="group flex items-center gap-4 bg-white border border-gray-200 rounded-2xl px-6 py-5 hover:border-[#C9A962] hover:shadow-lg hover:translate-x-1 transition-all duration-300"
+                >
+                  <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="w-2 h-2 rounded-full bg-[#C9A962]" />
+                  </div>
+                  <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-[#C9A962]/20 to-[#1A5F5E]/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <amenity.icon className="w-6 h-6 text-[#C9A962]" />
+                  </div>
+                  <span className="font-sans text-sm text-gray-700 font-medium">{amenity.name}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 
