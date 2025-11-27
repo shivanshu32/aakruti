@@ -216,18 +216,6 @@ const Contact = () => {
               </a>
             </div>
 
-            {/* Website */}
-            <div className="text-center p-6 bg-white rounded-2xl border border-gray-100">
-              <p className="font-sans text-gray-500 text-sm mb-2">Visit our website</p>
-              <a
-                href="https://www.earthousing.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-sans text-[#1A5F5E] font-semibold hover:text-[#C9A962] transition-colors"
-              >
-                www.earthousing.com
-              </a>
-            </div>
           </div>
         </div>
       </div>

@@ -32,9 +32,9 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-1">
             <img
-              src="/aakrutideveloper.jpg"
+              src="/aakrutideveloper.png"
               alt="Aakruti Developers"
-              className="h-16 w-auto mb-6 bg-white rounded-lg p-2"
+              className="h-32 w-auto mb-6 bg-white rounded-lg p-2"
             />
             <p className="font-sans text-gray-400 mb-6 leading-relaxed text-sm">
               Shri Vrinda Aakruti Village — An everlasting township offering premium plots 

@@ -36,9 +36,9 @@ const Navbar = () => {
           {/* Logo - Fixed width for balance */}
           <a href="#home" className="flex items-center space-x-2 lg:w-48">
             <img
-              src="/aakrutideveloper.jpg"
+              src="/aakrutideveloper.png"
               alt="Aakruti Developers"
-              className="h-12 md:h-14 w-auto"
+              className="h-16 md:h-[72px] w-auto"
             />
           </a>
 
