@@ -6,12 +6,12 @@ const Gallery = () => {
 
   const images = [
     {
-      src: '/A.jpg',
+      src: '/A.jpeg',
       alt: 'Aakruti Village Main Gate - Front View',
       title: 'Grand Entrance Gate',
     },
     {
-      src: '/B.jpg',
+      src: '/B.jpeg',
       alt: 'Aakruti Village Gate - Perspective View',
       title: 'Village Entrance',
     },
@@ -78,7 +78,7 @@ const Gallery = () => {
             onClick={() => setSelectedImage(0)}
           >
             <img
-              src="/A.jpg"
+              src="/A.jpeg"
               alt="Aakruti Village Panoramic View"
               className="w-full h-64 md:h-[500px] object-cover transition-transform duration-700 group-hover:scale-105"
             />

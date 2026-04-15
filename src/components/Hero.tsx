@@ -9,7 +9,7 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src="/A.jpg"
+          src="/A.jpeg"
           alt="Shri Vrinda Aakruti Village Gate"
           className="w-full h-full object-cover"
         />

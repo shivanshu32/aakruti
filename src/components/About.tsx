@@ -66,7 +66,7 @@ const About = () => {
             {/* Main image */}
             <div className="relative">
               <img
-                src="/B.jpg"
+                src="/B.jpeg"
                 alt="Aakruti Village Entrance"
                 className="w-full rounded-2xl shadow-2xl relative z-10"
               />
