@@ -1,4 +1,4 @@
-import { Download, MapPin, Shield, Home, Sparkles } from 'lucide-react';
+import { Download, MapPin, Shield, Home, Sparkles, CheckCircle } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -90,7 +90,7 @@ const Hero = () => {
             </div>
 
             {/* Quick Features */}
-            <div className="px-6 py-5 grid grid-cols-3 gap-4 md:gap-6">
+            <div className="px-6 py-5 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
               <div className="text-center">
                 <div className="w-10 h-10 mx-auto rounded-full bg-[#C9A962]/10 flex items-center justify-center mb-2">
                   <MapPin className="w-5 h-5 text-[#C9A962]" />
@@ -111,6 +111,13 @@ const Hero = () => {
                 </div>
                 <p className="font-sans text-[10px] text-gray-400 uppercase tracking-wider">Ready</p>
                 <p className="font-sans text-xs text-white font-medium">Possession</p>
+              </div>
+              <div className="text-center">
+                <div className="w-10 h-10 mx-auto rounded-full bg-[#C9A962]/10 flex items-center justify-center mb-2">
+                  <CheckCircle className="w-5 h-5 text-[#C9A962]" />
+                </div>
+                <p className="font-sans text-[10px] text-gray-400 uppercase tracking-wider">MVP</p>
+                <p className="font-sans text-xs text-white font-medium">Approved</p>
               </div>
             </div>
           </div>
