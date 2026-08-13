@@ -6,14 +6,29 @@ const Gallery = () => {
 
   const images = [
     {
-      src: '/A.jpeg',
-      alt: 'Aakruti Village Main Gate - Front View',
-      title: 'Grand Entrance Gate',
+      src: '/aakruti-aerial-entrance.jpg',
+      alt: 'Aerial overview of the Shri Vrinda Aakruti Village entrance',
+      title: 'Aerial Entrance View',
     },
     {
-      src: '/B.jpeg',
-      alt: 'Aakruti Village Gate - Perspective View',
-      title: 'Village Entrance',
+      src: '/aakruti-entrance-detail.jpg',
+      alt: 'Landscaped entrance wall and signature gateway',
+      title: 'Signature Entrance',
+    },
+    {
+      src: '/aakruti-entry-lanes.jpg',
+      alt: 'Gated entry and exit lanes with security cabin',
+      title: 'Secure Entry & Exit',
+    },
+    {
+      src: '/aakruti-central-fountain.jpg',
+      alt: 'Sculptural fountain at the central roundabout',
+      title: 'Landmark Fountain',
+    },
+    {
+      src: '/aakruti-arrival-masterplan.jpg',
+      alt: 'Aerial master view of the entrance plaza and landscaped roads',
+      title: 'Grand Arrival Plaza',
     },
   ];
 
@@ -48,11 +63,11 @@ const Gallery = () => {
 
         {/* Gallery Grid */}
         <div className="grid md:grid-cols-2 gap-8">
-          {images.map((image, index) => (
+          {images.slice(1).map((image, index) => (
             <div
-              key={index}
+              key={image.src}
               className="group relative overflow-hidden rounded-3xl shadow-lg cursor-pointer"
-              onClick={() => setSelectedImage(index)}
+              onClick={() => setSelectedImage(index + 1)}
             >
               <img
                 src={image.src}
@@ -78,8 +93,8 @@ const Gallery = () => {
             onClick={() => setSelectedImage(0)}
           >
             <img
-              src="/A.jpeg"
-              alt="Aakruti Village Panoramic View"
+              src={images[0].src}
+              alt={images[0].alt}
               className="w-full h-64 md:h-[500px] object-cover transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-black/60" />
