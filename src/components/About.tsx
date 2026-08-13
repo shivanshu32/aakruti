@@ -66,8 +66,8 @@ const About = () => {
             {/* Main image */}
             <div className="relative">
               <img
-                src="/B.jpeg"
-                alt="Aakruti Village Entrance"
+                src="/aakruti-aerial-entrance.jpg"
+                alt="Aerial view of the Shri Vrinda Aakruti Village entrance"
                 className="w-full rounded-2xl shadow-2xl relative z-10"
               />
               {/* Gold accent corner */}
