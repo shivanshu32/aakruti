@@ -9,8 +9,8 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src="/aakruti-aerial-entrance.jpg"
-          alt="Aerial view of the Shri Vrinda Aakruti Village entrance"
+          src="/aakruti-main-entrance.png"
+          alt="Front view of the Shri Vrinda Aakruti Village entrance"
           className="w-full h-full object-cover"
         />
         {/* Multi-layer gradient for depth */}
