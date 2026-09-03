@@ -1,3 +1,4 @@
+
 import { useState, useRef } from 'react';
 import { Map, ZoomIn, X, Download, Ruler, Trees, Route, LayoutGrid, Eye } from 'lucide-react';
 
@@ -100,7 +101,7 @@ const Sitemap = () => {
 
         <div className="grid lg:grid-cols-2 gap-10 items-start">
           {/* Left - Map */}
-          <div className="relative">
+          <div className="relative z-10">
             <div
               className="group relative rounded-2xl overflow-hidden shadow-2xl bg-white border border-[#C9A962]/20 h-[420px] md:h-[520px] lg:h-[560px] flex items-center justify-center cursor-zoom-in"
               onClick={openLightbox}
@@ -108,7 +109,7 @@ const Sitemap = () => {
               <div className="absolute inset-0 bg-gradient-to-tr from-[#C9A962]/5 via-transparent to-[#C9A962]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none z-10" />
 
               <img
-                src="/sitemap-landscape.jpg"
+                src="/sitemap-reference.png"
                 alt="Shri Vrinda Aakruti Village Site Map"
                 className="max-w-full max-h-full w-auto h-auto p-2 transition-transform duration-700 group-hover:scale-[1.02]"
               />
@@ -137,8 +138,8 @@ const Sitemap = () => {
               </div>
             </div>
 
-            {/* Address / Info Card */}
-            <div className="absolute -bottom-6 left-4 right-4 bg-white rounded-2xl shadow-xl p-5 border border-gray-100">
+            {/* Interactive Site Map Card */}
+            <div className="mt-8 p-6 bg-white rounded-2xl shadow-xl border border-gray-100">
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0 w-12 h-12 bg-[#C9A962] rounded-xl flex items-center justify-center">
                   <Eye className="w-6 h-6 text-white" />
@@ -175,7 +176,7 @@ const Sitemap = () => {
               </div>
             </div>
 
-            <div>
+            <div className="mb-10">
               <h3 className="font-serif text-2xl font-semibold text-gray-900 mb-6 tracking-wide">Plot Information</h3>
               <div className="grid grid-cols-2 gap-4">
                 {plotInfo.map((item, index) => (
@@ -190,7 +191,7 @@ const Sitemap = () => {
               </div>
             </div>
 
-            <div className="mt-8 bg-gradient-to-r from-[#1A5F5E] to-[#0D3D3C] rounded-2xl p-6 text-white">
+            <div className="bg-gradient-to-r from-[#1A5F5E] to-[#0D3D3C] rounded-2xl p-6 text-white">
               <h4 className="font-serif font-semibold text-lg mb-2">Download Master Plan</h4>
               <p className="font-sans text-white/80 text-sm leading-relaxed mb-5">
                 Get the complete site map in high-resolution PDF format for detailed reference and site visits.
@@ -262,7 +263,7 @@ const Sitemap = () => {
               }}
             >
               <img
-                src="/sitemap-landscape.jpg"
+                src="/sitemap-reference.png"
                 alt="Shri Vrinda Aakruti Village Site Map"
                 className="max-w-[95vw] max-h-[85vh] w-auto h-auto rounded-lg shadow-2xl"
                 draggable={false}

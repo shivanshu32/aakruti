@@ -44,12 +44,12 @@ const Navbar = () => {
           </a>
 
           {/* Desktop Navigation - Centered absolutely */}
-          <div className="hidden lg:flex items-center justify-center space-x-8 absolute left-1/2 -translate-x-1/2">
+          <div className="hidden lg:flex items-center justify-center lg:space-x-5 xl:space-x-8 absolute left-1/2 -translate-x-1/2">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className={`font-sans text-sm font-medium tracking-wide transition-colors duration-200 hover:text-[#C9A962] ${
+                className={`font-sans text-sm font-medium tracking-wide whitespace-nowrap transition-colors duration-200 hover:text-[#C9A962] ${
                   isScrolled ? 'text-gray-800' : 'text-white'
                 }`}
               >

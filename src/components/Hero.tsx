@@ -116,7 +116,7 @@ const Hero = () => {
                 <div className="w-10 h-10 mx-auto rounded-full bg-[#C9A962]/10 flex items-center justify-center mb-2">
                   <CheckCircle className="w-5 h-5 text-[#C9A962]" />
                 </div>
-                <p className="font-sans text-[10px] text-gray-400 uppercase tracking-wider">MVP</p>
+                <p className="font-sans text-[10px] text-gray-400 uppercase tracking-wider">MVDA</p>
                 <p className="font-sans text-xs text-white font-medium">Approved</p>
               </div>
             </div>
