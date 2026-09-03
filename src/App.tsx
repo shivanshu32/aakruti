@@ -5,6 +5,7 @@ import Amenities from './components/Amenities';
 import Villas from './components/Villas';
 import Gallery from './components/Gallery';
 import Media from './components/Media';
+import Sitemap from './components/Sitemap';
 import Location from './components/Location';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -19,6 +20,7 @@ function App() {
       <Villas />
       <Gallery />
       <Media />
+      <Sitemap />
       <Location />
       <Contact />
       <Footer />
